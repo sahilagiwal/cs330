@@ -1,9 +1,11 @@
 const button = document.querySelector(".click");
 const datagoeshere = document.querySelector(".datagoeshere");
-let array = [];
-let greaterArray = [];
-let sum = 0;
+
+
 button.onclick = function () {
+  let sum = 0;
+  let array = [];
+let greaterArray = [];
   for (var i = 0; i < 5; i++) {
     let k = Math.floor(Math.random() * 100);
     array.push(k);
