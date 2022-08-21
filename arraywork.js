@@ -1,10 +1,11 @@
 const button = document.querySelector(".click");
 const datagoeshere = document.querySelector(".datagoeshere");
-
-button.onclick = function () {
-  let sum = 0;
   let array = [];
   let greaterArray = [];
+button.onclick = function () {
+  let sum = 0;
+  array = [];
+  greaterArray = [];
   for (var i = 0; i < 5; i++) {
     let k = Math.floor(Math.random() * 100);
     array.push(k);
