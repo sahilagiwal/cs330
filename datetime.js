@@ -31,12 +31,12 @@ function getMydate() {
 }
 function get12Hour() {
   let hour = d.getHours() % 12 || 12;
-  let min = d.getMinutes() > 10 || "0" + d.getMinutes();
+  let min = d.getMinutes() > 10 ? d.getMinutes() : "0" + d.getMinutes();
   let time = "The time is " + hour + ":" + min;
   return time;
 }
 function get24Hour() {
-  let min = d.getMinutes() > 10 || "0" + d.getMinutes();
+  let min = d.getMinutes() > 10 ? d.getMinutes() : "0" + d.getMinutes();
   let time = "The time is " + d.getHours() + ":" + min;
   return time;
 }
