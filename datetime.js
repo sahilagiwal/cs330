@@ -26,17 +26,18 @@ function getMydate() {
     ", " +
     d.getFullYear() +
     "\n";
-  let hour = d.getHours() % 12 || 12;
-  let time = "Time time is " + hour + ":" + d.getMinutes();
+
   return date;
 }
 function get12Hour() {
   let hour = d.getHours() % 12 || 12;
-  let time = "Time time is " + hour + ":" + d.getMinutes();
+  let min = d.getMinutes() > 10 || "0" + d.getMinutes();
+  let time = "The time is " + hour + ":" + min;
   return time;
 }
 function get24Hour() {
-  let time = "Time time is " + d.getHours() + ":" + d.getMinutes();
+  let min = d.getMinutes() > 10 || "0" + d.getMinutes();
+  let time = "The time is " + d.getHours() + ":" + min;
   return time;
 }
 popup.onclick = function () {
